@@ -1,6 +1,8 @@
 from subprocess import STDOUT, check_call
 import os
 
+
+
 def install_packages(package_names):
     for package_name in package_names:
         print('Installing package {}'.format(package_name))
