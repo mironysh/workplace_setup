@@ -10,7 +10,10 @@ def install_packages(package_names):
 
 
 def create_directory(dir_name):
+    # вот такой вот вариант я нашел как создать папочку)
     print('Creating directory'.format(dir_name))
+    if not os.path.exists(dir_name):
+        os.makedirs(dir_name)
 
 
 def change_rights(dir_name):
